@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Claymorphism Login Form using HTML & CSS</title>
+  </head>
+  <style>
+  /*Import Poppins Font*/
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*CSS Reset*/
+*{
+  box-sizing: border-box;
+}
+
+/*Styles for whole body tag*/
+body{
+  min-height: 100vh;
+  margin:0;
+  background:#a2b9ff;
+  color:#576d95;
+  font-family:poppins;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+/*The form container*/
+.wrapper{
+  max-width: 400px;
+  width:100%;
+  padding:30px;
+  border-radius:35px;
+  background:#fff;
+  box-shadow:0 35px 68px 0 rgba(136, 174, 222, 0.42),inset 0 -8px 16px 0 #b9d1f1;
+}
+/*The title part in the form container*/
+.header{
+  font-size:36px;
+  font-weight:500;
+  margin:0 0 12px;
+  text-align:center;
+}
+
+.headertext{
+  font-size:16px;
+  margin:0 0 24px 0;
+  text-align: center;
+}
+
+/*The inputs, and their colors and styles*/
+.inputwrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width:100%;
+  margin:0 0 16px 0;
+}
+
+.inputwrapper label{
+  margin:0 0 4px 0;
+}
+
+.inputwrapper input{
+  width:100%;
+  height:40px;
+  padding:8px 16px;
+  font-size:16px;
+  border-radius:10px;
+  border:1px solid #4f77f0;
+  color:#576d95;
+  outline-color:#2046ba;
+}
+
+/*The submit button*/
+ .submit{
+   border:none;
+   padding:12px 35px;
+   margin:0 auto;
+   display: block;
+   font-family: poppins;
+   font-size:16px;
+   color:#fff;
+   border-radius: 10px;
+   background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+   background-size: 200% 100%;
+   background-position: 100% 100%;
+   transition: background-position 256ms;
+   will-change: background-position;
+   cursor:pointer;
+ }
+
+ .submit:hover{
+   background-position: 0% 200%;
+ }
+  </style>
+  <body>
+<div class="wrapper">
+<h1 class="header">SIGN UP</h1>
+<p class="headertext">Let's create your new account for our platform!</p>
+<form>
+  <div class="inputwrapper">
+    <label>First Name</label>
+    <input type="text" autocomplete="off" required>
+  </div>
+  <div class="inputwrapper">
+    <label>Last Name</label>
+    <input type="text" autocomplete="off" required>
+  </div>
+  <div class="inputwrapper">
+    <label>Username</label>
+    <input type="text" autocomplete="off" required>
+  </div>
+  <div class="inputwrapper">
+    <label>Password</label>
+    <input type="password" required>
+  </div>
+  <button type="submit" class="submit">Sign Up</button>
+</form>
+</div>
+
+  </body>
+</html>
