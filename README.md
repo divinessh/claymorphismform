@@ -1,4 +1,4 @@
-# claymorphismform
+# Claymorphism Signup Form Page
 >This is a demo project of making a simple register account page for a website but with CSS styling of claymorphism. Claymorphism basically provides a fake 3D effect that allows for much faster processing of buttons and panels by our brain.
 
 ## Presentation
